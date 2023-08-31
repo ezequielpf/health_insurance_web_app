@@ -7,8 +7,8 @@ df_raw = pd.read_csv('/home/ezequiel/Documentos/Comunidade_DS/health_insurance_c
 data = json.dumps(df_raw.sample(500).to_dict(orient='records'))
 
 # API call
-url = 'http://localhost:5000/predict'
-#url = 'https://rossmann-sales-predict-g0vz.onrender.com/rossmann/predict'
+#url = 'http://localhost:5000/predict'
+url = 'https://health-insurance-web-app.onrender.com/predict'
 #header = {'Content-type': 'application/jason'}
 data = data
 
